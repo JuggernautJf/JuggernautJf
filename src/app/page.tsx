@@ -6,10 +6,10 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Hello this is my github page</h1>
       <Image
-      alt={""}
-      src={"/avatar.svg"}
-      height={895}
-      width={598}
+        alt={""}
+        src={"meauman.svg"}
+        height={895}
+        width={598}
       />
     </main>
   );
