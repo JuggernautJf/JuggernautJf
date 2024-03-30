@@ -4,7 +4,7 @@
 - 💞️ I’m looking to collaborate on [YES] <sub>all of them</sub>
 - 📫 How to reach me: I prbably will let you know after I get to know you enough...
 - 😄 Pronouns: IDK wat are pronouns???
-- ⚡ Fun fact: The [svg](./avatar.svg) below was originally created when I was 15! 🫣
+- ⚡ Fun fact: The [svg](./public/avatar.svg) below was originally created when I was 15! 🫣
 
 <!---
 JuggernautJf/JuggernautJf is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
