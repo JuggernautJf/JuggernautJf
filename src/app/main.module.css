@@ -1,0 +1,118 @@
+.body {
+    background: #000;
+    color: white;
+    margin: 0;
+    font-family: monospace;
+}
+.hero {
+    height: 80vh;
+    background: #920000;
+}
+.hero > div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+    padding: 12px;
+}
+
+.hero > div {
+    h1 {
+        font-size: 4em;
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.main > * {
+    width: 100%;
+}
+.sec1 {
+    background-color: hsl(133, 38%, 28%);
+}
+.sec1 > h3 {
+    padding-inline: 12px;
+    padding-block: 28px;
+    font-size: 3em;
+}
+
+.skill_bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.skill_bubbles > li {
+    background: hsl(133, 40%, 25%);
+    padding: 43px;
+    border-radius: 100em;
+    margin: 5px;
+    max-width: initial;
+}
+
+.skill_bubbles > li:hover {
+    background: hsl(133, 36%, 30%);
+    animation: onhoverbendover 500ms both;
+}
+
+.skill_bubbles > li div{
+    display: none;
+}
+
+.skill_bubbles > li {
+    position: relative;
+}
+
+@keyframes onhoverbendover {
+    0% {
+        .skill_bubbles > li:hover span{
+            opacity: 100%;
+        }
+        .skill_bubbles {
+            rotate: 30deg;
+        }
+        .skill_bubbles > li:hover div{
+            display: block;
+            opacity: 0%;
+        }
+    }
+    99% {
+        .skill_bubbles > li:hover span{
+            opacity: 0%;
+        }
+        .skill_bubbles > li:hover div{
+            display: block;
+            opacity: 100%;
+        }
+        .skill_bubbles {
+            rotate: -30deg;
+        }
+    }
+    100% {
+        .skill_bubbles > li:hover span{
+            display: none;
+            opacity: 0;
+        }
+        .skill_bubbles > li:hover div{
+            display: block;
+        }
+    }
+}
+
+.skill_bubbles > li:hover span{
+    opacity: 0;
+}
+.skill_bubbles > li:hover div{
+    display: inline;
+    position: absolute;
+    top: 0;bottom: 0;
+    align-content: center;
+    left: 18px;
+    border-radius: 100em;
+    margin: 5px;
+    overflow: visible;
+}
+
