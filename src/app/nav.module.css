@@ -1,0 +1,19 @@
+.nav {
+    box-sizing: content-box;
+    width: max-content;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    align-content: center;
+}
+
+.nav > ul {
+    display: flex;
+    flex-flow: column nowrap;
+    li { list-style: none; 
+    }
+    width: max-content;
+    padding: 2rem;
+    gap: 2rem;
+    margin-block: 20px;
+}

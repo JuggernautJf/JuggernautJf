@@ -5,8 +5,8 @@
     font-family: monospace;
 }
 .hero {
-    height: 80vh;
-    background: #920000;
+    height: 70vh;
+    background: #030b46;
 }
 .hero > div {
     display: flex;
@@ -32,7 +32,7 @@
     width: 100%;
 }
 .sec1 {
-    background-color: hsl(133, 38%, 28%);
+    background-color: #2c4663;
 }
 .sec1 > h3 {
     padding-inline: 12px;
@@ -46,16 +46,13 @@
     list-style: none;
 }
 .skill_bubbles > li {
-    background: hsl(133, 40%, 25%);
     padding: 43px;
     border-radius: 100em;
     margin: 5px;
-    max-width: initial;
 }
 
 .skill_bubbles > li:hover {
-    background: hsl(133, 36%, 30%);
-    animation: onhoverbendover 500ms both;
+    background: hsla(133, 36%, 30%, 0.055);
 }
 
 .skill_bubbles > li div{
@@ -66,53 +63,47 @@
     position: relative;
 }
 
-@keyframes onhoverbendover {
-    0% {
-        .skill_bubbles > li:hover span{
-            opacity: 100%;
-        }
-        .skill_bubbles {
-            rotate: 30deg;
-        }
-        .skill_bubbles > li:hover div{
-            display: block;
-            opacity: 0%;
-        }
-    }
-    99% {
-        .skill_bubbles > li:hover span{
-            opacity: 0%;
-        }
-        .skill_bubbles > li:hover div{
-            display: block;
-            opacity: 100%;
-        }
-        .skill_bubbles {
-            rotate: -30deg;
-        }
-    }
-    100% {
-        .skill_bubbles > li:hover span{
-            display: none;
-            opacity: 0;
-        }
-        .skill_bubbles > li:hover div{
-            display: block;
-        }
-    }
+.skill_bubbles >li > span {
+    font-size: 1rem;
+    position: relative;
+    opacity: 100%;
+    z-index: 1;
 }
 
 .skill_bubbles > li:hover span{
+    margin: 50%;
     opacity: 0;
 }
-.skill_bubbles > li:hover div{
+
+.skill_bubbles > li:hover div {
+    --delx: calc((-4/3)* attr(data-posx px));
     display: inline;
     position: absolute;
     top: 0;bottom: 0;
     align-content: center;
-    left: 18px;
+    text-align: center;
+    left: 0;
     border-radius: 100em;
+    z-index: 2;
+    padding: 15px;
+    border: 5px  #2f224b;
     margin: 5px;
+    width: 200%;
     overflow: visible;
+    background-color: #262227 ;
+    transform: translateX(var(--delx));
+    ::after {
+        content: attr(data-posx px);
+    }
 }
 
+.skill_bubbles > li > img {
+    z-index: 0;
+    border-radius: 100vh;
+    filter: blur(0.8px) brightness(0.5);
+}
+
+.transition_curve {
+    width: 100%;
+    margin: 0; padding: 0;
+}
