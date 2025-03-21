@@ -2,11 +2,8 @@ import Image from "next/image";
 import mstyle from "./main.module.css"
 import mstyle2 from "./main.abt_me.module.css"
 import { SkillBubbles } from "@/components/skill_bubbles";
-import { Nav } from "./nav";
 import curve1 from './wavesOpacity.svg'
-import curve0 from './curveAsymmetricalNegative.svg'
 import { Card } from "@/components/traitCard"
-import { GetStaticProps, InferGetStaticPropsType } from "next";
 
 
 export default function Home() {
