@@ -1,9 +1,13 @@
 import Image from "next/image";
 import mstyle from "./main.module.css"
+import mstyle2 from "./main.abt_me.module.css"
 import { SkillBubbles } from "@/components/skill_bubbles";
 import { Nav } from "./nav";
 import curve1 from './wavesOpacity.svg'
 import curve0 from './curveAsymmetricalNegative.svg'
+import { Card } from "@/components/traitCard"
+import { GetStaticProps, InferGetStaticPropsType } from "next";
+
 
 export default function Home() {
   return (
@@ -17,10 +21,23 @@ export default function Home() {
             <Image src={curve1} alt={''} width={1080} className={mstyle.transition_curve}/>
         </section>
         <section id="sec1" className={mstyle.sec1}>
-            <h3>What I Work With:</h3>
-            <ul className={mstyle.skill_bubbles}>
-              <SkillBubbles/>
-            </ul>
+            <h3>My Tools:</h3>
+            <SkillBubbles/>
+        </section>
+        <section id="sec2" className={mstyle2.sec2}>
+          <div className={mstyle2.blobby}>
+            <h3>About Me:</h3>
+            <p>Myself, Harsha Sur.☺️</p>
+          </div>
+        </section>
+        <section id="sec3">
+          <ul>
+            <Card title={'lorem'}/>
+            <Card title={'ipsum'}/>
+            <Card title={'dolor'}/>
+            <Card title={'sit'}/>
+            <Card title={'amit'}/>
+          </ul>
         </section>
     </main>
     </div>

@@ -1,0 +1,62 @@
+.skill_bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    row-gap: 1rem; 
+}
+.skill_bubbles > li {
+    padding: 43px;
+    border-radius: 100em;
+    margin: 5px;
+}
+
+.skill_bubbles > li:hover {
+    background: hsla(133, 36%, 30%, 0.055);
+}
+
+.skill_bubbles > li div{
+    display: none;
+}
+
+.skill_bubbles > li {
+    position: relative;
+}
+
+.skill_bubbles >li > span {
+    font-size: 1rem;
+    position: relative;
+    background: #00000047;
+    border-radius: 10em;
+    z-index: 1;
+}
+
+.skill_bubbles > li:hover span{
+    opacity: 0;
+}
+
+.skill_bubbles > li:hover div {
+    --delx: calc((-4/3)* attr(data-posx px));
+    display: inline;
+    position: absolute;
+    top: 0;bottom: 0;
+    align-content: center;
+    text-align: center;
+    left: 0;
+    border-radius: 100em;
+    z-index: 2;
+    padding: 15px;
+    border: 5px  var(--bacground-secondary);
+    margin: 5px;
+    width: 200%;
+    overflow: visible;
+    background-color: #262227 ;
+    transform: translateX(var(--delx));
+}
+
+.skill_bubbles > li > img {
+    z-index: 0;
+    border-radius: 100vh;
+    filter: blur(0.8px) brightness(0.5);
+    object-fit: cover;
+}

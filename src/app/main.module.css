@@ -1,12 +1,13 @@
 .body {
-    background: #000;
-    color: white;
+    background: var(--background-main);
+    color: var(--foreground);
     margin: 0;
     font-family: monospace;
+    font-size: 1rem;
 }
 .hero {
-    height: 70vh;
-    background: #030b46;
+    height: 80vh;
+    background: var(--bacground-secondary);
 }
 .hero > div {
     display: flex;
@@ -17,10 +18,8 @@
     padding: 12px;
 }
 
-.hero > div {
-    h1 {
-        font-size: 4em;
-    }
+.hero > div > h1 {
+    font-size: 4em;
 }
 
 .main {
@@ -28,11 +27,11 @@
     flex-direction: column;
     align-items: flex-start;
 }
-.main > * {
-    width: 100%;
-}
+
 .sec1 {
-    background-color: #2c4663;
+    margin-inline: 5%;
+    margin-top: 0%;
+    background-color: var(--background-main);
 }
 .sec1 > h3 {
     padding-inline: 12px;
@@ -40,70 +39,15 @@
     font-size: 3em;
 }
 
-.skill_bubbles {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-.skill_bubbles > li {
-    padding: 43px;
-    border-radius: 100em;
-    margin: 5px;
-}
-
-.skill_bubbles > li:hover {
-    background: hsla(133, 36%, 30%, 0.055);
-}
-
-.skill_bubbles > li div{
-    display: none;
-}
-
-.skill_bubbles > li {
-    position: relative;
-}
-
-.skill_bubbles >li > span {
-    font-size: 1rem;
-    position: relative;
-    opacity: 100%;
-    z-index: 1;
-}
-
-.skill_bubbles > li:hover span{
-    margin: 50%;
-    opacity: 0;
-}
-
-.skill_bubbles > li:hover div {
-    --delx: calc((-4/3)* attr(data-posx px));
-    display: inline;
-    position: absolute;
-    top: 0;bottom: 0;
-    align-content: center;
-    text-align: center;
-    left: 0;
-    border-radius: 100em;
-    z-index: 2;
-    padding: 15px;
-    border: 5px  #2f224b;
-    margin: 5px;
-    width: 200%;
-    overflow: visible;
-    background-color: #262227 ;
-    transform: translateX(var(--delx));
-    ::after {
-        content: attr(data-posx px);
-    }
-}
-
-.skill_bubbles > li > img {
-    z-index: 0;
-    border-radius: 100vh;
-    filter: blur(0.8px) brightness(0.5);
-}
-
 .transition_curve {
     width: 100%;
+    background-repeat: repeat-x;
     margin: 0; padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .transition_curve {
+        width: 100rem;
+        margin: 0; padding: 0;
+    }
 }

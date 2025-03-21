@@ -1,0 +1,48 @@
+{
+    "django": {
+        "desc": "Python web framework for perfectionists with deadlines",
+        "img": "/skills/django.png",
+        "web": "https://www.djangoproject.com/"
+    },
+    "flask": {
+        "desc": "Micro web framework written in Python",
+        "img": "/skills/flask.jpeg",
+        "web": "https://flask.palletsprojects.com/"
+    },
+    "nextjs": {
+        "desc": "React framework for polished web applications",
+        "img": "/skills/nextjs.jpeg"
+    },
+    "reactjs": {
+        "desc": "For user interfaces out of individual pieces called components written in JavaScript",
+        "img": "/skills/react.jpeg"
+    },
+    "framer motion": {
+        "desc": "A production-ready motion library for React",
+        "img": "/skills/framer_motion.jpeg"
+    },
+    "expo": {
+        "desc": "For Universal native apps for Android, iOS, and the web with React",
+        "img": "/skills/expo.jpeg"
+    },
+    "mongodb": {
+        "desc": "Manage document-oriented information, store or retrieve information",
+        "img": "/skills/mongodb.png"
+    },
+    "mysql": {
+        "desc": "Widely used for relational database management",
+        "img": "/skills/mysql.jpeg"
+    },
+    "typescript": {
+        "desc": "Strongly typed programming language that builds on JavaScript",
+        "img": "/skills/typescript.jpeg"
+    },
+    "adobeillustraitor": {
+        "desc": " Professional vector-based design and drawing program",
+        "img": "/skills/adobeillustraitor.jpeg"
+    },
+    "vscode": {
+        "desc": "Powerful, lightweight code editor",
+        "img": "/skills/vscode.jpeg"
+    }
+}
