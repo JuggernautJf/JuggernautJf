@@ -5,7 +5,7 @@ Welcome to my GitHub profile! I'm a passionate developer with a focus on [your e
 ## 👀 About Me
 - 🌱 I’m currently learning **[B.Sc. Computer Science from BITS Pilani (Online, Flexible)]**.
 - 💼 I’m looking to collaborate on **[NodeJS, TypeScript, JavaScript, React, Software Automation]**.
-- 🎯 My goal is to **[your professional or personal goal]**.
+- 🎯 My goal is to **[Make a name of myself, duh]**.
 - 😄 Pronouns: **[he/him]**.
 
 ## 🛠️ Skills & Tools
