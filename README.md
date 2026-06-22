@@ -20,7 +20,7 @@ Here are some of my favorite projects:
 ## 📫 How to Reach Me
 - Email: [3xib5j8tk@mozmail.com](mailto://3xib5j8tk@mozmail.com)
 - LinkedIn: [https://www.linkedin.com/in/harshasur22/]
-- Portfolio: [https://harsha-portfolio-pro.vercel.app/]
+- Portfolio: [https://harsha-portfolio-web.vercel.app/]
 <!--
 ## 🌐 Socials
 - Twitter: [my Twitter handle]
